@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Cadastro de Eventos e Convidados - Login</title>
+<link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+<body>
+<header>
+<p>Bem-vindo, <%= usuario.nome %>
+</p>
+<a href="/menu">Home</a>
+<h1>Lista de Usuários</h1>
+<h4>Selecione uma opção na lista para executá-la</h4>
+</header>
+<section>
+
+<table>
+<thead>
+<tr>
+<th>Nome</th>
+<th>Senha</th>
+</tr>
+</thead>
+<tbody>
+<% usuarios.forEach(function(user, index) { %>
+<tr>
+<td>
+<%= user.nome %>
+</td>
+<td>
+<%= user.senha %>
+</td>
+
+</tr>
+<% }) %>
+</tbody>
+</table>
+
+
+    <!--será implementado em breve-->
+</section>
+<footer>
+<small>Sistema de Cadastro de Eventos e Convidados</small>
+</footer>
+</body>
+</html>
